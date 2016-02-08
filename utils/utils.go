@@ -57,7 +57,7 @@ func LoadFiles(root string, ignoredPatterns []string) (files []string, err error
 	return
 }
 
-// GetRegion attempts loading the AWS region from ~/.aws.config.
+// GetRegion attempts loading the AWS region from ~/.aws/config.
 func GetRegion(profile string) (string, error) {
 	u, err := user.Current()
 	if err != nil {
