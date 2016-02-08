@@ -13,7 +13,7 @@ func Test_Sha256(t *testing.T) {
 }
 
 func Test_LoadFiles(t *testing.T) {
-	files, _ := utils.LoadFiles("_fixtures/fileAndDir", []string{"testfile"})
+	files, _ := utils.LoadFiles("_fixtures/fileAndDir", []string{"testfile", "ignoredir"})
 	assert.Equal(t, "testdir/indir", files[0])
 	assert.Equal(t, 2, len(files))
 }
